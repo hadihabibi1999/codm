@@ -1,0 +1,95 @@
+form {
+  width: 100%;
+  max-width: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem 1rem;
+  border: 0.1px solid rgb(245, 239, 227);
+  background-color: rgb(253, 250, 250);
+  border-radius: 2rem;
+}
+
+legend {
+  text-transform: uppercase;
+  color: rgb(8, 8, 8);
+  font-size: larger;
+  font-weight: 700;
+  text-shadow: 5px 5px 20px rgb(255, 123, 0);
+}
+
+input[type="email"],
+input[type="text"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+  border-top-color: rgb(251, 180, 168);
+  border-left-color: rgb(251, 180, 168);
+  transition: border 0.8s, box-shadow 3s;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+  border: 1px solid #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 4px #b9d3fa;
+}
+
+button {
+  background-color: #0d6efd;
+  border: 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: 20px;
+  color: #fff;
+  outline: 0;
+  font-size: larger;
+}
+
+button:focus {
+  background-color: rgb(214, 251, 182);
+  cursor: progress;
+}
+
+button:hover {
+  background-color: rgb(151, 191, 255);
+  cursor: context-menu;
+}
+
+input[type="checkbox"],
+label.radio {
+  cursor: pointer;
+}
+
+label.radio {
+  font-size: 1rem;
+  color: rgb(70, 69, 69);
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.muted {
+  color: #6c757d;
+  margin-bottom: 0;
+  font-size: 10px;
+  text-align: center;
+}
+
+.form-controller {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (max-width: 238px) {
+  legend {
+    font-size: small;
+  }
+}

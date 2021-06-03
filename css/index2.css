@@ -1,0 +1,38 @@
+body {
+  background: rgb(245, 63, 5);
+  background: linear-gradient(
+    252deg,
+    rgba(245, 63, 5, 1) 44%,
+    rgba(210, 29, 64, 1) 85%
+  );
+  font-size: 82.5%;
+  height: 102vh;
+  display: grid;
+  grid-template-rows: repeat(2, 50vh);
+  grid-template-columns: repeat(3, 33vw);
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  row-gap: 2vh;
+}
+.img-size {
+  width: 33vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 7px;
+}
+@media screen and (max-width: 800px) {
+  .img-size {
+    width: 0;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  table{
+    display: none;
+
+  }
+}

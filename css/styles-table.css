@@ -1,0 +1,42 @@
+#table {
+  border: 2px solid white;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+tr:nth-child(odd) {
+  border: 1px solid #c4dcf3;
+  background-color: #eef7ff;
+}
+tr,
+td,
+th {
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #427fef;
+  color: aliceblue;
+}
+tfoot {
+  text-align: left;
+}
+@media screen and (max-width: 230px) {
+  tr,
+  td,
+  th {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 190px) {
+  tr,
+  td,
+  th {
+    font-size: x-small;
+  }
+}
